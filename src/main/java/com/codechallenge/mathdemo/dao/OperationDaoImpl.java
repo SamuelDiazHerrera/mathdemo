@@ -10,12 +10,13 @@ public class OperationDaoImpl implements OperationDao {
     /**
      * params operation
      * 
-     * NOTE: This will callls a db and save a record for every operation performed*
+     * NOTE: This will call a db and save a record for every operation performed*
      * Unfortunally it has been a some time since I configured a H2 database, so it
-     * will requires some efford to review the documentation and figure it out how to
-     * do it, all the things needed for this config is in the gradle file, application
-     * properties configuration is pending and also the jpa cool stuff.
-     * 
+     * will requires some efford to review the documentation and configure it, all 
+     * the things needed for this configuration are in the gradle file, application
+     * properties configuration is pending and also the jpa cool stuff. Thanks for
+     * review my CC.
+     *
      * returns the operation id
      */
     @Override
