@@ -15,17 +15,17 @@ public class OperationController {
     }
 
     @RequestMapping("/getASum")
-    public Integer getASum(@RequestParam(name="num1") Integer a, @RequestParam(name="num2") Integer b){
-        return service.sum(a, b);
+    public Integer getASum(@RequestParam(name="num1") String a, @RequestParam(name="num2") String b){
+        return service.sum(Integer.valueOf(a), Integer.valueOf(b));
     }
 
     @RequestMapping("/getAProduct")
     public Integer getAProduct(@RequestParam(name="num") Integer a){
-        return service.product(a);
+        return service.product(Integer.valueOf(a));
     }
 
     @RequestMapping("/getAPower")
     public Integer getAPower(@RequestParam(name="num") Integer a){
-        return service.power(a);
+        return service.power(Integer.valueOf(a));
     }
 }
